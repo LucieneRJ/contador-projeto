@@ -11,19 +11,55 @@
     <header>
         <h1>Vamos contar</h1>
     </header>
-    <section>
-        <div id="dados">
-            <p>Início: <input type="number" name="inicio" id="iniciotxt"></p>
-            <p>Fim: <input type="number" name="fim" id="fimtxt"></p>
-            <p>Passo: <input type="number" name="passo" id="passotxt"></p>
-            <p><input type="button" value="Contar" onclick="contar()"></p>
+    <section class="d-flex-section card-section">
+        <form>
+          <div class="d-flex-form">
+            <label for="txtini">Início:</label>
+            <input type="number" name="txtini" id="txtini" />
+          </div>
+          <div class="d-flex-form">
+            <label for="txtfim">Fim:</label>
+            <input type="number" name="txtfim" id="txtfim" />
+          </div>
+          <div class="d-flex-form">
+            <label for="txtpas">Passo:</label>
+            <input type="number" name="txtpas" id="txtpas" />
+          </div>
+        </form>
+        <div>
+          <input type="button" id="btn" value="Contar" onclick="contar()" />
         </div>
-        <div id="res">
-            Preparando a contagem
+        <div>
+          <p id="res">Preparando a contagem...</p>
         </div>
+      </section>
     </section>
+
     <footer>
-        <p>&copy; LucieneFreitas</p>
+      <a
+        title="GitHub"
+        target="_blank"
+        href="#"
+        class="fab fa-github"
+      ></a>
+      <a
+        title="Linkedin"
+        target="_blank"
+        href="#"
+        class="fab fa-linkedin"
+      ></a>
+      <a
+        title="CodePen"
+        target="_blank"
+        href="#"
+        class="fab fa-codepen"
+      ></a>
+      <a
+        title="Free Code Camp"
+        target="_blank"
+        href="#"
+        class="fab fa-free-code-camp"
+      ></a>
     </footer>
     <script src="script.js"></script>
 </body>
